@@ -7,3 +7,7 @@ def home(request):
 def blog(requset):
     return render(requset,'blog.html')
 
+
+def signup(request):
+    pass
+

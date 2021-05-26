@@ -1,22 +1,19 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 {% load static %}
-<html>
-<head>
-<meta charset="utf-8">
-<title>Online Homework Help - 24x7 Homework Help from TutorChamps.com</title>
-<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
-<link href="{% static 'css/style.css' %}" rel="stylesheet">
-<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+{% block title %}
+Online Homework Help - 24x7 Homework Help from TutorChamps.com
+{% endblock title %} 
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+{% block meta %}
+  
 
 <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="description" content="Are you struggling with homework writing? Try Tutor Champs and Get the best online homework help solution from expert tutors. Get Solution Now!">
-</head>
+{% endblock meta %}
 
-<body class="hidden-bar-wrapper">
-
+{% block body %}
+  
 <div class="page-wrapper">
     <div class="preloader">
     	<div class="mesh-loader">
@@ -903,34 +900,5 @@
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 
-<script src="{% static 'js/jquery.js' %}"></script>
-<script src="{% static 'js/popper.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
-<script src="{% static 'js/jquery.fancybox.js' %}"></script>
-<script src="{% static 'js/appear.js' %}"></script>
-<script src="{% static 'js/parallax.min.js' %}"></script>
-<script src="{% static 'js/tilt.jquery.min.js' %}"></script>
-<script src="{% static 'js/jquery.paroller.min.js' %}"></script>
-<script src="{% static 'js/owl.js' %}"></script>
-<script src="{% static 'js/wow.js' %}"></script>
-<script src="{% static 'js/nav-tool.js' %}"></script>
-<script src="{% static 'js/jquery-ui.js' %}"></script>
-<script src="{% static 'js/script.js' %}"></script>
-<script>
-	
-    $('.count').each(function () {
-	    $(this).prop('Counter',0).animate({
-	        Counter: $(this).text()
-	    }, {
-	        duration: 10000,
-	        easing: 'swing',
-	        step: function (now) {
-	            $(this).text(Math.ceil(now));
-	        }
-	    });
-	}); 
-    
-</script>
-</body>
-</html>
+
+{% endblock body %}

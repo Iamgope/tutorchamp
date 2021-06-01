@@ -11292,7 +11292,7 @@ header li.more:hover > a::before {
     opacity: 0!important;
 }
 .Sbanner {
-    background: url(../images/india-country.jpg);
+    background: url('/static/images/india-country.jpg');
     width: 100%;
     /* min-height: 521px; */
     background-size: cover;

@@ -469,6 +469,27 @@
 }
 
 @media only screen and (max-width: 767px){
+	.instructor-section{background: #f0faf5;
+    margin: 20px 0;}
+	.Sbanner h1{font-size: 32px; margin-bottom: 15px;}
+	.Sbanner h2{font-size: 15px; margin-bottom: 30px;}
+	.Sbanner .__icon-container{width: 100%;margin: 0 auto 30px;padding: 13px 0;background: #43b97e87;}
+	.Sbanner .__icon-container>div{padding: 0 9px}
+	.Sbanner .__icon-container span{font-size: 12px;}
+	.commForm .pos_rel{width: 100%;}
+	.commForm .form_group{display: block;}
+	.twoField{width: 100%;}
+	.commForm h2{font-size: 20px; margin-bottom: 15px;}
+	.ban_container{padding: 20px;}
+	.flex_div{display: block;}
+	.guarantees__item {
+	    padding: 0;
+	    text-align: center;
+	    margin-bottom: 38px;
+	}
+	.guarantees__icon{ margin: 0 auto 24px; position: inherit;}
+	.h_2{line-height: 36px; font-size: 28px;}
+	.Sbanner{height: auto;min-height: 1065px;padding: 25px 0px;background-position: 19%;}
 	.main-header .header-upper .logo-box+a{right: 73px; display: block!important;}
 	section#counter-stats{padding: 0;}
 	.sign_up {

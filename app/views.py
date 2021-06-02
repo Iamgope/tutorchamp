@@ -19,7 +19,7 @@ def homework(request):
         desc = request.POST.get('desc')
         file = request.POST.get('file')
 
-
+        return render(request,'dashboard.html')
 
         return render(request,'dwashboard.html')
 

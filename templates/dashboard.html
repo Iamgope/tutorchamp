@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dashboard</title>
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+	<header class="main-header header wow fadeInUp">
+        <nav class="navbar navbar-expand-lg navbar-light custom_nav">
+            <div class="container">
+                <a class="mob-logo" href=""><img src="{% static 'images/logo.png' %}" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+                	<span class="navbar-toggler-icon"></span>
+              	</button>
+                <div class="collapse navbar-collapse justify-content-end" id="mynav">
+                    <div class="top-menu">
+						<ul class="nav navbar-nav pull-right">
+
+
+						<li>
+						<a href="" class="btn btn-success new-assignment-btn hidden-xs hidden-sm">
+						<img class="plusImg" src="https://cdn1.myassignmenthelp.com/revamp-assets-version2/student-new-icons/6.svg" alt="new-assignment">New Assignment
+						</a>
+						</li>
+						<li class="dropdown dropdown-extended dropdown-notification dropdown-light my-library" id="">
+						<a href="" class="" title="My Library">
+						<img class="lib-icon" src="https://cdn1.myassignmenthelp.com/revamp-assets-version2/student-new-icons/bank.svg">
+						<span class="badge badge-default">0</span>
+						</a>
+						</li>
+						<li class="dropdown dropdown-extended dropdown-notification dropdown-light" id="header_notification_bar">
+						<a href="" class="" title="Wallet">
+						<img src="https://cdn1.myassignmenthelp.com/revamp-assets-version2/student-new-icons/wallet.svg" class="wallet-icon">
+
+						 <span class="badge badge-default">
+						$20 </span>
+						</a>
+						</li>
+
+
+
+						<li class="dropdown dropdown-extended dropdown-notification dropdown-light" id="header_task_bar">
+						<a href="" class="">
+						<img src="https://cdn1.myassignmenthelp.com/revamp-assets-version2/student-new-icons/message.svg" class="msg-icon">
+						</a>
+						</li>
+
+
+						<li class="dropdown dropdown-user dropdown-user-pic dropdown-light">
+						<a href="javascript:;" class=" profileDrop" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+						<img alt="" class="img-circle profile" src="https://cdn1.myassignmenthelp.com/revamp-assets-version2/student-new-icons/profile-s.svg">
+						<div class="user-details">
+						<span class="username username-hide-mobile">
+						</span>
+						<span class="username username-hide-mobile order-id">User Id: 714265</span>
+						</div>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-default hidden-xs" style="width: 195px;">
+						<li class="hide-mobile">
+						<a href=""> My Profile </a>
+						</li>
+						<li class="hide-mobile">
+						<a href=""> My Finances</a>
+						</li>
+						<li class="hide-mobile">
+
+						<a href="javascript:void(0)" onclick="logoutVirtualVisitor();"> Sign Out </a>
+						</li>
+						</ul>
+						</li>
+
+						</ul>
+					</div>
+                </div>
+            </div>
+        </nav>           
+
+    </header>
+
+
+    <div class="mainContent">
+    	<div class="container">
+    		<div class="row">
+				<div class="col-md-12">
+					<div class="pt-4 d-flex justify-content-between orderID">
+						<h4>hjwqgwhjwq</h4>
+						<h4 class=""> Order
+						Id: 1718071  </h4>
+					</div>
+				</div>
+				<div class="col-md-12" id="orderFormFieldsSection">
+					<div class="panel panel-primary assignmentDetails">
+						<div class="panel-heading">
+							<h3 class="panel-title">Please provide following details for the best support</h3>
+						</div>
+						<div class="panel-body panelBody">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label class="control-label">Your Current Level Of Study</label>
+										<select class="form-control" name="Work_Level" id="Work_Level">
+											<option value="1">High School</option>
+											<option value="2">Diploma</option>
+											<option selected="" value="3">Undergraduate/College</option>
+											<option value="4">Post Graduate/University</option>
+											<option value="5">PhD/Doctorate</option> 
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4">
+								<div class="form-group">
+								<label class="control-label">Reference Style of
+								Assignment</label>
+								<select class="form-control">
+									<option value="" selected="true" disabled="disabled">Select Reference
+									</option>
+									<option value="17">ACS</option>
+									<option value="7">AGLC</option>
+									<option value="2">APA</option>
+									<option value="18">APSA</option>
+									<option value="8">BMJ</option>
+									<option value="4">Chicago</option>
+									<option value="5">Footnotes</option>
+									<option value="6">Footnotes and bibliography</option>
+									<option value="1">Harvard</option>
+									<option value="16">IEEE</option>
+									<option value="9">MHRA</option>
+									<option value="3">MLA</option>
+									<option value="15">Not Selected</option>
+									<option value="14">Open</option>
+									<option value="11">OSCOLA</option>
+									<option value="10">Oxford</option>
+									<option value="13">Turabian</option>
+									<option value="12">Vancouver</option> 
+								</select>
+								</div>
+								</div>
+								<div class="col-md-4 wrapper">
+									<div class="button-container">
+										<button type="button" class="order-btn submitDetail">Submit Details</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </div>
+
+
+
+
+
+
+    <footer>
+    	<div class="text-center">Copyright 2021 © tutorchamps.com, All Right Reserved</div>
+    </footer>
+
+
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
